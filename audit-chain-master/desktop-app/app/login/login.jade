@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='/login.css')
+    link(rel='stylesheet', href='../../node_modules/bootstrap/dist/css/bootstrap.min.css')
+    title Audit Chain
+    
+  body
+    .container
+      .row
+        .col-md-12.col-sm-12.col-xs-12.center-block.text-center(style='padding: 20px 20px 20px 20px')
+          h1 Log In
+      form(id='signin-form')
+        .row.form-group
+          .col-md-6.col-sm-12.col-xs-12.center-block
+            label(htmlFor='username') Username
+            input.form-control(id='username' type='text')
+          .col-md-6.col-sm-12.col-xs-12.center-block
+            label(htmlFor='password') Password
+            input.form-control(id='password' type='password')
+        .row.form-group
+          .col-md-12.col-sm-12.col-xs-12.center-block.text-center(style='padding: 20px 20px 20px 20px')
+            button.btn.btn-default(type='submit') Sign In
+      .row
+        span.col-md-12.col-sm-12.col-xs-12.center-block.text-center(id='error-message')  
+    script(type='text/javascript' src='./login.js')

@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+hfc-key-store
+fabric-network/crypto-config
+fabric-network/channel-artifacts
